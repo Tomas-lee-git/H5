@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		form{
+			width: 50%;
+			margin: 0 auto;
+		}
+		input{
+			width: 100%;
+			margin: 5px ;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" id='form'>
+		<fieldset>
+			<legend>新表单属性</legend>
+			<!--  input标签 默认的 提醒信息  -->
+			<input type="text" name="" placeholder="请输入用户名">
+			<input type="email" name="" placeholder="请输入电子邮箱" autofocus>
+			<input type="file" multiple>
+			<!-- 必须 为 该标签 添加name属性  还需要改表单 曾经提交过-->
+			<input type="tel" name="telPhone" autocomplete placeholder="请输入电话号码">
+			<input type="submit" >
+		</fieldset>
+	</form>
+	
+
+
+
+
+
+
+
+
+
+
+	<input type="text" name="userHabbit" placeholder="请输入你的爱好" form='form'>
+</body>
+</html>

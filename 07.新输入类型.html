@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		form{
+			width: 80%;
+			margin: 0 auto;
+			border: 1px solid #0094ff;
+		}
+		label{
+			font-weight: 900;
+			font-size: 30px;
+		}
+		input{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+		<fieldset>
+			<!--使用字段集(fieldset)给整个表单添加一个边框-->
+			<!--并且在边框上要有说明文字。-->
+			<legend>新输入类型</legend>
+			<!--legend 解释-->
+			<label>type=color
+				<input type="color">
+			</label>
+			<label>type=date
+				<input type="date">
+			</label>
+			<label>type=datetime
+				<input type="datetime">
+			</label>
+			<label>type=datetime-local
+				<input type="datetime-local">
+			</label>
+			<label>type=date
+				<input type="date">
+			</label>
+			<label>type=email
+				<input type="email">
+			</label>
+			<label>type=month
+				<input type="month">
+			</label>
+			<label>type=week
+				<input type="week">
+			</label>
+			<label>type=time
+				<input type="time">
+			</label>
+			<label>type=number
+				<input type="number">
+			</label>
+			<label>type=range
+				<input type="range">
+			</label>
+			<label>type=search
+				<input type="search">
+			</label>
+			<label>type=url
+				<input type="url">
+			</label>
+		</fieldset>
+		<input type="submit"/>
+	</form>
+</body>
+</html>

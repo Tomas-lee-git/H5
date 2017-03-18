@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- audio 标签
+		controls 控制
+		autoplay 自动播放
+		loop 是否循环
+		src 直接指定音频文件
+	-->
+	<!-- 当我们使用 source属性指定多个音频时 会从上往下进行解析,找到可以播放的 即可开始播放
+		如果 遇到无法播放的 会继续往下解析 直到可以播放为止
+	 -->
+	 <!--
+		如果 都无法解析 我们能够在最后 设置一个提示信息
+		可以对 低版本的 用户 进行一个友善的提示
+	  -->
+	<audio  controls autoplay loop>
+	<!--<audio  controls loop>-->
+	<!--<audio  autoplay loop>-->
+	<!--<audio  autoplay loop>-->
+		<!--<source src="music/music.ogg" >-->
+		<source src="music/郝云 - 活着.mp3" >
+		亲爱的用户,你的浏览器版本太低,无法享受这个页面的所有功能,建议进行更新 ^_^ <a href="#">戳我下载</a>
+	</audio>
+</body>
+</html>

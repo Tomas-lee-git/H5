@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        header {
+            height: 100px;
+            width: 100px;
+            background-color: hotpink;
+            /* 低版本的ie 中如果 想要看到 必须添加display block */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<header></header>
+</body>
+</html>
+<!-- 希望 这一段js代码 只在 指定的ie版本中 执行 -->
+
+<!-- emmet 语法 生成-->
+
+
+<!--
+	l less
+	t than
+	e equal
+	lte 小于等于
+ -->
+
+<!--[if lt IE 9]>
+<script type="text/javascript">
+    alert("我执行了");
+    window.onload = function () {
+        var createHeader = document.createElement("header");
+        document.body.appendChild(createHeader);
+    }
+</script>
+<![endif]-->
+

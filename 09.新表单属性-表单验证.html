@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		form{
+			width: 50%;
+			margin: 0 auto;
+		}
+		input{
+			width: 100%;
+			margin: 5px ;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+		<fieldset>
+			<legend>表单验证</legend>
+			<!-- email这个标签 自带了 表单的格式验证 不能验证 空的值 -->
+			<input type="email" name="userEmail" required>
+			<!-- 对 字符串 格式的验证 使用的是 正则 
+				pattern 中可以写正则 进行验证
+			-->
+			<input type="tel" placeholder="请输入电话号码"  name='userTel' required pattern="\d{3}" oninvalid="	this.setCustomValidity('亲爱的用户你输入的格式不正确,请重新输入')">
+			<input type="submit">
+		</fieldset>
+	</form>
+</body>
+</html>

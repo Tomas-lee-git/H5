@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+<!-- html5为了规范自定义属性的写法,新增了一个 data-的属性 -->
+	<div data-age='18' data-skill='eatFood' data-habbit = 'tableTannis' data-food-vegetable='西兰花' data-foodMeat='牛肉'></div>
+</body>
+</html>
+<script type="text/javascript">
+	window.onload = function(){
+		// 所有 通过 data-的方式 添加的属性 都会保存在dom元素的 dataset属性中 他是一个对象
+		// 设置属性时 能够使用大写字母 但是会自动帮我们转化为 小写的字母
+		// 作用是 为了规范 自定义属性的写法
+		console.log(document.querySelector('div').dataset);
+		console.log(document.querySelector('div').dataset.age);
+		console.log(document.querySelector('div').getAttribute("data-age"));
+		console.log(document.querySelector('div').dataset.foodVegetable);
+		console.log(document.querySelector('div').dataset.foodmeat);
+	}
+</script>

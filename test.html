@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--文档声明,给浏览器看,规定浏览器应该以哪种方试打开文档-->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- 编码格式-->
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        header {
+            background-color: red;
+            width: 100%;
+            height: 10%;
+        }
+
+        nav {
+            background-color: yellow;
+            width: 100%;
+            height: 30%;
+        }
+
+        a {
+            /*float: left;*/
+            text-decoration: none;
+            text-align: center;
+            margin-left: 5px;
+        }
+
+        main {
+            height: 80%;
+            width: 100%;
+            background-color: teal;
+        }
+
+        aside {
+            width: 20%;
+            height: 100%;
+            float: left;
+            background-color: orange;
+        }
+
+        article {
+            width: 80%;
+            height: 100%;
+            float: left;
+            background-color: blue;
+        }
+
+        section {
+            width: 100%;
+            height: 20%;
+            background-color: pink;
+        }
+
+        footer {
+            width: 100%;
+            height: 10%;
+            background-color: green;
+        }
+        form{
+            width: 50%;
+            margin: 0  auto;
+        }
+        input{
+            width: 100%;
+            margin: 1px;
+            border: 0;
+            padding: 0;
+        }
+    </style>
+    <script></script>
+    <!--[if lte IE 9>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/htm5shiv.min.js"></script>
+    <script type="text/javascript" src="js/html5shiv.min.js"> </script>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 6]>
+
+    <![endif]-->
+    <!--[if lte IE 6]>
+
+    <![endif]-->
+
+</head>
+<body>
+<!--<input type="button" value="点我试试"/>-->
+<header>
+    <nav>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+    </nav>
+</header>
+<main>
+    <aside>
+        <label for="number"> 数字输入:
+            <input type="number" id="number"/>
+        </label>
+    </aside>
+    <article>
+        <form action="#">
+            <fieldset>
+                <legend>新表单属性</legend>
+                <input type="text" name="userName" placeholder="请输入用户名"  autofocus/><br/>
+                <input type="password" name="passWord" placeholder="请输入密码"/><br/>
+                <input type="email" name="email"  placeholder="请输入电子邮箱" autofocus required oninvalid="this.setCustomValidity('再想想哦')"/><br/>
+                <input type="file" multiple/><br/>
+                <input type="tel" name="telPhone" autocomplete placeholder="请输入电话号码" pattern="/^1[3568]\d{9}$/"/><br/>
+                <input type="submit"/><br/>
+                <!--<a href=""></a>-->
+                <!--esc跳出""-->
+            </fieldset>
+        </form>
+
+    </article>
+</main>
+<section>1</section>
+<section>2</section>
+<footer></footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			border: 1px solid #0094ff;
+		}
+		.orange{
+			background-color: orange;
+		}
+		.skyBlue{
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div class='showBox'></div>
+	<input type="button" value='add'>
+	<input type="button" value='remove'>
+	<input type="button" value='contain'>
+	<input type="button" value='toggle'>
+</body>
+</html>
+<script type="text/javascript">
+	window.onload = function(){
+		// 获取 要操纵的div 方便后续的操作
+		var div = document.querySelector('.showBox');
+		// querySelector
+		// 新增class
+		document.querySelector('input[value=add]').onclick = function(){
+			// alert('ADD');
+			div.classList.add('orange');
+		}
+
+		// 移除class
+		document.querySelector('input[value=remove]').onclick = function () {
+			div.classList.remove('orange');
+		}
+		// 判断是否存在class
+		document.querySelector('input[value=contain]').onclick = function () {
+			alert(div.classList.contains('orange'));
+		}
+		// 切换class
+		document.querySelector('input[value=toggle]').onclick = function () {
+			div.classList.toggle('skyBlue');
+		}
+	}
+</script>

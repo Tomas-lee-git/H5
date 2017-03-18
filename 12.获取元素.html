@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul>
+		<li>哈哈哈</li>
+		<li>哈哈哈</li>
+		<li class='fruit'>西瓜</li>
+		<li>哈哈哈</li>
+		<li>哈哈哈</li>
+		<li class='fruit'>哈密瓜</li>
+		<li>哈哈哈</li>
+		<li id='qiaokeli'>巧克力</li>
+		<li>哈哈哈</li>
+		<li>哈哈哈</li>
+	</ul>
+</body>
+</html>
+<script type="text/javascript">
+	// 获取单个 方法的参数 支持 使用CSS的选择器
+	/*
+		标签 li
+		class .class
+		id #id
+		这个方法 只能获取满足条件的 第一个dom元素
+		document.querySelector 
+	*/
+	document.querySelector('li').style.backgroundColor = 'orange';
+	document.querySelector("#qiaokeli").style.backgroundColor="teal";
+//	document.querySelector("li").style.backgroundColor="orange";
+	document.querySelector('.fruit').style.backgroundColor = 'skyblue';
+
+	// 这个方法 返回的类型是 数组 哪怕只有一个元素 返回的也是数组
+	var fruitDoms = document.querySelectorAll('.fruit');
+	for (var i = 0; i < fruitDoms.length; i++) {
+		fruitDoms[i].style.color = 'red';
+	};
+
+//	var lis=document.querySelectorAll("ul li");
+//	console.log(lis);
+</script>
